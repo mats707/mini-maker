@@ -1,0 +1,19 @@
+{
+  "name": "mini-maker",
+  "version": "1.0.0",
+  "description": "Projeto para automatizar criação/desenvolvimento de vídeos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mats707/mini-maker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mats707/mini-maker/issues"
+  },
+  "homepage": "https://github.com/mats707/mini-maker#readme"
+}
