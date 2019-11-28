@@ -1,10 +1,15 @@
 const readline = require('readline-sync')
+const robots = {
+    text: require('./robots/text.js')
+}
 
 function start() {
     const content = {}
 
     content.prefix = askAndReturnPrefix()
     content.searchTerm = askAndReturnSearchTerm()
+
+    robots.text(content)
 
     function askAndReturnPrefix() {
         const prefixes = ['Who is', 'What is', 'The history of']
