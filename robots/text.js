@@ -4,8 +4,8 @@ const sentenceBoundaryDetection = require('sbd')
 
 async function robot(content) {
     await fetchContentFromWikipedia(content)
-    //sanitizedContent(content)
-    //breakContentIntoSentences(content)
+    sanitizedContent(content)
+    breakContentIntoSentences(content)
 
     async function fetchContentFromWikipedia(content) {
         const algorithmiaAuthenticated = algorithmia(algorithmiaApiKey)
@@ -34,7 +34,7 @@ async function robot(content) {
                 return true
             })
 
-            return withoutBlankLinesAndMarkdown.joint(' ')
+            return withoutBlankLinesAndMarkdown.join(' ')
         }
     }
 
